@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sovereign Glass Systems | Architectural Glass & Balustrades</title>
+    <style>
+        :root {
+            --obsidian: #0f172a;
+            --slate: #334155;
+            --ice-cyan: #0ea5e9;
+            --light-bg: #f8fafc;
+            --white: #ffffff;
+            --border: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--light-bg);
+            color: var(--slate);
+            line-height: 1.6;
+        }
+
+        .top-bar {
+            background-color: var(--obsidian);
+            color: var(--white);
+            padding: 10px 20px;
+            font-size: 0.85rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .top-bar a {
+            color: var(--ice-cyan);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header {
+            background: var(--white);
+            border-bottom: 1px solid var(--border);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--obsidian);
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--ice-cyan);
+            display: block;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--obsidian) 0%, #1e293b 100%);
+            color: var(--white);
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: var(--white);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+        }
+
+        .btn-primary {
+            background-color: var(--ice-cyan);
+            color: var(--white);
+            padding: 14px 28px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            display: inline-block;
+            transition: background 0.2s;
+        }
+
+        .btn-primary:hover {
+            background-color: #0284c7;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--obsidian);
+            margin-bottom: 40px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-top: 4px solid var(--ice-cyan);
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .card h3 {
+            color: var(--obsidian);
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .form-section {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 40px;
+            margin-top: 60px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: var(--obsidian);
+        }
+
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        footer {
+            background: var(--obsidian);
+            color: #94a3b8;
+            padding: 40px 20px;
+            margin-top: 80px;
+            border-top: 1px solid #1e293b;
+        }
+
+        .footer-grid {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            margin-bottom: 15px;
+        }
+
+        .footer-col p {
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 1.8rem; }
+            .top-bar { text-align: center; justify-content: center; gap: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div>📍 Serving Newport, Cardiff &amp; South Wales</div>
+        <div>📞 Direct Line: <a href="tel:07403819988">07403 819988</a> | ✉️ Email: <a href="mailto:quotes@sovereignglass.co.uk">quotes@sovereignglass.co.uk</a></div>
+    </div>
+
+    <header>
+        <div class="logo">
+            SOVEREIGN
+            <span>GLASS SYSTEMS</span>
+        </div>
+        <a href="#quote" class="btn-primary" style="padding: 10px 18px; font-size: 0.9rem;">Get a Quote</a>
+    </header>
+
+    <section class="hero">
+        <h1>Architectural Glass &amp; Luxury Living</h1>
+        <p>Engineered perfection in frameless glass balustrades, custom interior panels, and luxury bathroom installations across South Wales.</p>
+        <a href="#quote" class="btn-primary">Request Free Site Survey</a>
+    </section>
+
+    <div class="container">
+        <h2 class="section-title">Our Specialist Services</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Frameless Glass Balustrades</h3>
+                <p>Sleek, uninterrupted views for patio extensions, balconies, and garden decking. Precision-fitted with toughened safety glass and marine-grade stainless steel.</p>
+            </div>
+            <div class="card">
+                <h3>Bespoke Luxury Bathrooms</h3>
+                <p>Delivered alongside <strong>Abbott Luxury Bathrooms</strong>. Turnkey wetrooms, custom glass shower screens, premium tiling, and full project installation.</p>
+            </div>
+            <div class="card">
+                <h3>Staircases &amp; Interior Glass</h3>
+                <p>Transform interior spaces with custom glass partition walls and modern staircase balustrades crafted to exact laser-measured specifications.</p>
+            </div>
+        </div>
+
+        <div class="form-section" id="quote">
+            <h2 class="section-title" style="margin-bottom: 20px;">Request a Free Instant Quote</h2>
+            <form action="mailto:quotes@sovereignglass.co.uk" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Your Full Name</label>
+                    <input type="text" id="name" name="Name" placeholder="e.g. John Smith" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="Phone" placeholder="e.g. 07123 456789" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Service Required</label>
+                    <select id="service" name="Service">
+                        <option>Frameless Glass Balustrade</option>
+                        <option>Bespoke Luxury Bathroom</option>
+                        <option>Interior Glass / Staircase</option>
+                        <option>General Architectural Glass</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="details">Project Details / Approximate Dimensions</label>
+                    <textarea id="details" name="Details" rows="4" placeholder="e.g. 5m patio balustrade in Rogerstone area..."></textarea>
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%; border: none; cursor: pointer; font-size: 1.1rem;">Submit Quote Request</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Sovereign Glass Systems</h4>
+                <p>📞 07403 819988</p>
+                <p>✉️ quotes@sovereignglass.co.uk</p>
+                <p>🌐 sovereignglass.co.uk</p>
+                <p>📍 South Wales Coverage</p>
+            </div>
+            <div class="footer-col">
+                <h4>Abbott Luxury Bathrooms</h4>
+                <p>📞 07403 819988</p>
+                <p>✉️ simon@abbottluxurybathrooms.co.uk</p>
+                <p>🌐 abbottluxurybathrooms.co.uk</p>
+                <p>📍 Rogerstone, Newport NP10 9FN</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+          </html>
+          
